@@ -7,7 +7,7 @@ Este es un proyecto de maquetación web utilizando HTML y CSS adaptable a distin
 * [LinkedIn](https://www.linkedin.com/in/omarfuentes-desarrollofrontend/)
 
 ## URL para ver el resultado
-Para ver proyecto en vivo puedes verlo aquí [https://eduardofierropro.github.io/Tabs-en-HTML-CSS-y-JS/](https://eduardofierropro.github.io/Tabs-en-HTML-CSS-y-JS/)
+Para ver proyecto en vivo puedes verlo aquí [https://samfuentes11.github.io/MaquetacionWeb-CSS-Responsive/](https://samfuentes11.github.io/MaquetacionWeb-CSS-Responsive/)
 
 ## Instalación 🖥
 Este proyecto no necesita instalación. Simplemente abre la carpeta o haz doble click en el index.html.
