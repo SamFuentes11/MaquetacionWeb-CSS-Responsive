@@ -1,0 +1,181 @@
+@media (max-width: 768px) {
+    .wrap {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    #menu ul li {
+        font-size: 21px;
+        margin-top: 2px;
+    }
+
+    #banner h1 {
+        width: 100%;
+        font-size: 33px;
+        text-align: center;
+    }
+
+    .card {
+        width: 17%;
+        margin: 1%;
+        padding: 2px;
+    }
+
+    #articles {
+        width: 60%;
+    }
+
+    #articles article {
+        width: 99%;
+    }
+
+    #footer .wrap > div {
+        width: 29%;
+        margin: 2%;
+    }
+}
+
+@media (max-width: 576px) {
+    #header {
+        height: 100px;
+        padding-top: 10px;
+    }
+
+    #logo {
+        float: none;
+        margin: 0px auto;
+        height: 39px;
+    }
+
+    #logo i {
+        font-size: 24px;
+        margin-left: 14px;
+    }
+
+    #logo h3 {
+        font-size: 30px;
+        margin-right: 16px;
+        margin-top: 1px;
+    }
+
+    #menu {
+        clear: both;
+        float: none;
+        width: 87%;
+        margin: 0px auto;
+    }
+
+    #menu ul li {
+        font-size: 24px;
+        margin-top: 11px;
+    }
+
+    #banner {
+        background-position: -821px -150px;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .card p {
+        display: none;
+    }
+
+    #lateral {
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+    }
+
+    #lateral button {
+        padding-left: 24px;
+    }
+
+    aside h3 {
+        margin: 15px auto;
+    }
+
+    .aside-box {
+        width: 68%;
+        margin-left: 80px;
+    }
+
+    #login #user i, 
+    #login #password i {
+        margin-left: 46px;
+    }
+
+    #login input[type="email"], 
+    #login input[type="password"] {
+        width: 70%;
+    }
+
+    #login input[type="submit"], 
+    #login input[type="reset"] {
+        margin-left: 73px;
+    }
+
+    #login a {
+        margin-left: 40px;
+    }
+
+    #articles {
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+    }
+
+    #articles h2 {
+        width: 100%;
+    }
+
+    #articles article {
+        width: 95%;
+    }
+        
+    #footer {
+        height: auto;
+    }
+
+    #footer h5 {
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    #footer .wrap > div {
+        width: 97%;
+        margin: 2%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #footer ul {
+        text-align: center;
+        list-style: none;
+    }
+
+    #info #html img {
+        width: 50%;
+        margin-left: 137px;
+        margin-top: 10px;
+    }
+
+    #footer #browsers {
+        width: 50%;
+        margin-left: 127px;
+        margin-top: 10px;
+    }
+
+    #footer #browsers img {
+        width: 15%;
+    }
+
+    #info #autor {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master en CSS con Responsive</title>
+    <link rel="icon" type="image/x-icon" href="img/supertux.png">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Inicio de la Cabecera-->
+    <header id="header">
+        <div class="wrap">
+            <div id="logo">
+                <i class="fas fa-cog"></i>
+                <h3>BLOG</h3>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">INFORMACIÓN</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!--Fin de la Cabecera-->
+
+    <section class="wrap">
+        <section id="info">
+            <!--Inicio Banner-->
+            <div id="banner">
+                <h1>CURSO DE DESARROLLO WEB</h1>
+            </div>
+            <!--Fin Banner-->
+
+            <!--Inicio Tarjetas-->
+            <div id="cards">
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h2 class="category">Desarrollo Web</h2>
+                    <p>Aprende los principales lenguajes para desarrollar webs. ¡Conviértete en un webmaster!</p>
+                </div>
+
+                <div class="card">
+                    <i class="fab fa-connectdevelop"></i>
+                    <h2 class="category">Sistemas Operativos</h2>
+                    <p>Aprende a administrar sistemas Linux y Windows.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-cog"></i>
+                    <h2 class="category">Hardware</h2>
+                    <p>Conoce los secretos del hardware.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-wifi"></i>
+                    <h2 class="category">Redes e Internet</h2>
+                    <p>Aprende a administrar y configurar redes informáticas y servidores.</p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-database"></i>
+                    <h2 class="category">Bases de datos</h2>
+                    <p>Aprende a montar y administrar bases de datos.</p>
+                </div>
+            </div>
+        </section>
+        <!--Fin Tarjetas-->
+
+        <!--Inicio Barra Lateral-->
+        <div class="clearfix"></div>
+        <aside id="lateral">
+            <h3>BUSCAR</h3>
+            <div id="search">
+                <form>
+                    <input type="text" />
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <h3>LOGIN</h3>
+            <div id="login" class="aside-box">
+                <form>
+                    <label id="user"><i class="fas fa-user"></i></label>
+                    <input type="email" />
+
+                    <label id="password"><i class="fas fa-key"></i></label>
+                    <input type="password" />
+
+                    <input type="submit" value="Entrar" />
+                    <input type="reset" value="Limpiar" />
+
+                    <a href="#">Regístrate aquí</a>
+                    <a href="#">¿Has olvidado la contraseña?</a>
+                </form>
+
+            </div>
+
+            <h3>REDES SOCIALES</h3>
+            <div id="social" class="aside-box">
+                <div class="twitter">
+                    <a href="#">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUwNC40IDUwNC40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDQuNCA1MDQuNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zNzcuNiwwLjJIMTI2LjRDNTYuOCwwLjIsMCw1NywwLDEyNi42djI1MS42YzAsNjkuMiw1Ni44LDEyNiwxMjYuNCwxMjZIMzc4YzY5LjYsMCwxMjYuNC01Ni44LDEyNi40LTEyNi40VjEyNi42DQoJCQlDNTA0LDU3LDQ0Ny4yLDAuMiwzNzcuNiwwLjJ6IE0zNzcuMiwxODljMCwyLjgsMCw1LjYsMCw4LjRjMCw4NC02NC44LDE4MC44LTE4My42LDE4MC44Yy0zNi40LDAtNzAuNC0xMC40LTk4LjgtMjguNA0KCQkJYzUuMiwwLjQsMTAsMC44LDE1LjIsMC44YzMwLjQsMCw1OC0xMCw4MC0yNy4yYy0yOC40LTAuNC01Mi0xOC44LTYwLjQtNDRjNCwwLjgsOCwxLjIsMTIsMS4yYzYsMCwxMi0wLjgsMTcuMi0yLjQNCgkJCWMtMjguOC02LTUwLjgtMzEuNi01MC44LTYyLjRWMjE1YzgsNC44LDE4LjQsNy42LDI4LjgsOGMtMTcuMi0xMS4yLTI4LjgtMzAuOC0yOC44LTUyLjhjMC0xMS42LDMuMi0yMi40LDguOC0zMg0KCQkJYzMyLDM4LjQsNzkuMiw2My42LDEzMi44LDY2LjRjLTEuMi00LjgtMS42LTkuNi0xLjYtMTQuNGMwLTM1LjIsMjguOC02My42LDY0LjQtNjMuNmMxOC40LDAsMzUuMiw3LjYsNDcuMiwyMA0KCQkJYzE0LjgtMi44LDI4LjQtOCw0MC44LTE1LjZjLTQuOCwxNC44LTE1LjIsMjcuMi0yOC40LDM1LjJjMTMuMi0xLjYsMjUuNi00LjgsMzcuMi0xMEM0MDAuNCwxNjksMzg5LjYsMTgwLjIsMzc3LjIsMTg5eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                        <p>Twitter</p>
+                    </a>
+                </div>
+
+                <div class="facebook">
+                    <a href="#">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUwNCA1MDQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwNCA1MDQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMzc3LjYsMEgxMjZDNTYuOCwwLDAsNTYuOCwwLDEyNi40VjM3OGMwLDY5LjIsNTYuOCwxMjYsMTI2LDEyNmgyNTEuNmM2OS42LDAsMTI2LjQtNTYuOCwxMjYuNC0xMjYuNFYxMjYuNA0KCQkJQzUwNCw1Ni44LDQ0Ny4yLDAsMzc3LjYsMHogTTMxOS42LDI1MkgyNzJ2MTU2aC02MFYyNTJoLTMydi02NGgyOHYtMjcuMmMwLTI1LjYsMTIuOC02Niw2Ni44LTY2SDMyNFYxNDhoLTM0LjgNCgkJCWMtNS42LDAtMTMuMiwzLjYtMTMuMiwxNnYyNGg0OS4yTDMxOS42LDI1MnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                        <p>Facebook</p>
+                    </a>
+                </div>
+
+                <div class="youtube">
+                    <a href="#">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUwNCA1MDQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwNCA1MDQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cG9seWdvbiBwb2ludHM9IjIxOS42LDIwMi40IDIxOS42LDI5NC40IDMwNC40LDI0OC44IAkJIi8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zNzcuNiwwSDEyNkM1Ni44LDAsMCw1Ni44LDAsMTI2LjRWMzc4YzAsNjkuMiw1Ni44LDEyNiwxMjYsMTI2aDI1MS42YzY5LjYsMCwxMjYuNC01Ni44LDEyNi40LTEyNi40VjEyNi40DQoJCQlDNTA0LDU2LjgsNDQ3LjIsMCwzNzcuNiwweiBNNDA4LDI2NC40YzAsMjYuNC0yLjQsNTMuMi0yLjQsNTMuMnMtMi44LDIyLjQtMTIsMzIuNGMtMTIsMTMuMi0yNS4yLDEzLjItMzEuMiwxNA0KCQkJYy00NCwzLjItMTEwLDMuNi0xMTAsMy42cy04Mi0xLjItMTA3LjItMy42Yy02LjgtMS4yLTIyLjgtMC44LTM0LjgtMTRjLTkuNi0xMC0xMi0zMi40LTEyLTMyLjRTOTYsMjkwLjgsOTYsMjY0LjR2LTI0LjgNCgkJCWMwLTI2LjQsMi40LTUzLjIsMi40LTUzLjJzMi44LTIyLjQsMTItMzIuNGMxMi0xMy4yLDI1LjItMTMuNiwzMS4yLTE0LjRDMTg2LDEzNi40LDI1MiwxMzYsMjUyLDEzNnM2NiwwLjQsMTEwLDMuNg0KCQkJYzYsMC44LDE5LjYsMS4yLDMxLjYsMTRjOS42LDEwLDEyLDMyLjgsMTIsMzIuOHMyLjQsMjYuOCwyLjQsNTMuMlYyNjQuNHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                        <p>YouTube</p>
+                    </a>
+                </div>
+            </div>
+
+            <h3>COLABORADORES</h3>
+            <div id="sponsors" class="aside-box">
+            </div>
+        </aside>
+        <!--Fin Barra Lateral-->
+
+        <!--Inicio Artículos-->
+        <section id="articles">
+            <h2>ÚLTIMOS ARTÍCULOS</h2>
+            <div class="clearfix"></div>
+            <article>
+                <div class="data">
+                    <span>Fecha: 03/02/2021</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                    <h4><a href="#">Título del artículo</a></h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at bibendum velit, consectetur
+                        dapibus enim. Mauris sapien tellus, convallis non interdum vitae, tristique non magna. Duis
+                        eleifend vitae arcu vitae faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia curae; Aenean mauris turpis, faucibus et iaculis consequat, suscipit
+                        blandit metus. In euismod volutpat diam in viverra.</p>
+            </article>
+
+            <article>
+                <div class="data">
+                    <span>Fecha: 03/02/2021</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                    <h4><a href="#">Título del artículo</a></h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at bibendum velit, consectetur
+                        dapibus enim. Mauris sapien tellus, convallis non interdum vitae, tristique non magna. Duis
+                        eleifend vitae arcu vitae faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia curae; Aenean mauris turpis, faucibus et iaculis consequat, suscipit
+                        blandit metus. In euismod volutpat diam in viverra.</p>
+            </article>
+
+            <article>
+                <div class="data">
+                    <span>Fecha: 03/02/2021</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                    <h4><a href="#">Título del artículo</a></h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at bibendum velit, consectetur
+                        dapibus enim. Mauris sapien tellus, convallis non interdum vitae, tristique non magna. Duis
+                        eleifend vitae arcu vitae faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia curae; Aenean mauris turpis, faucibus et iaculis consequat, suscipit
+                        blandit metus. In euismod volutpat diam in viverra.</p>
+            </article>
+
+            <article>
+                <div class="data">
+                    <span>Fecha: 03/02/2021</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                    <h4><a href="#">Título del artículo</a></h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at bibendum velit, consectetur
+                        dapibus enim. Mauris sapien tellus, convallis non interdum vitae, tristique non magna. Duis
+                        eleifend vitae arcu vitae faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia curae; Aenean mauris turpis, faucibus et iaculis consequat, suscipit
+                        blandit metus. In euismod volutpat diam in viverra.</p>
+            </article>
+
+            <article>
+                <div class="data">
+                    <span>Fecha: 03/02/2021</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                    <h4><a href="#">Título del artículo</a></h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at bibendum velit, consectetur
+                        dapibus enim. Mauris sapien tellus, convallis non interdum vitae, tristique non magna. Duis
+                        eleifend vitae arcu vitae faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia curae; Aenean mauris turpis, faucibus et iaculis consequat, suscipit
+                        blandit metus. In euismod volutpat diam in viverra.</p>
+            </article>
+
+            <article id="blog">
+                <a href="#">IR AL BLOG</a>
+            </article>
+        </section>
+        <!--Fin Artículos-->
+    </section>
+
+    <!--Inicio PIE DE PÁGINA-->
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <div class="wrap">
+            <div id="menu_footer">
+                <h5>MENÚ</h5>
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">INFORMACIÓN</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </div>
+
+            <div id="location">
+                <h5>¿DÓNDE ESTAMOS?</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4477.529949933078!2d-99.11842628259781!3d19.319778778027306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01eb94402c05%3A0x18c40d2bfb8593cf!2zMTnCsDE5JzEzLjYiTiA5OcKwMDcnMDguNyJX!5e0!3m2!1ses!2smx!4v1612392321095!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <div id="info">
+                <h5>Desarrollado con</h5>
+                <p id="html">
+                    <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="Creado con HTML Y CSS">
+                </p>
+
+                <h5>Optimizado para</h5>
+                <p id="browsers">
+                    <a href="#">
+                        <img src="img/firefox-icon.png" alt="Firefox" title="Firefox">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/chrome.png" alt="Chrome" title="Chrome">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/Opera_256x256.png" alt="Opera" title="Opera">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/safari.png" alt="Safari" title="Safari">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/android.png" alt="Android" title="Android">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/ios.png" alt="iOS" title="iOS">
+                    </a>
+                </p>
+
+                <h5>AUTOR</h5>
+                <p id="autor">&copy; Omar Fuentes - Tich Soluciones</p>
+            </div>
+        </div>
+    </footer>
+    <!--Fin PIE DE PÁGINA-->
+
+</body>
+
+</html>
